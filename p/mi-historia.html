@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Historia</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(79, 55, 165);
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+    header{
+        width: 100%;
+        height: 110vh;
+    }
+
+    .caja_title_historia{
+        width: 20%;
+        float: left;
+        margin-top: 10%;
+        margin-left: 40%;
+    }
+    .title_historia{
+        font-size: 2em;
+        font-family: Century Gothic;
+        color: rgb(41, 0, 153);
+        text-align: center;
+    }
+
+
+
+    .caja_texto_historia{
+        font-size: 1em;
+        color: black;
+        font-family: Century Gothic;
+        margin-top: 10%;
+        float: left;
+        margin-left: 20%;
+        width: 60%;
+        line-height: 1.5;
+    }
+
+
+
+
+
+    footer{
+            width: 100%;
+            height: 67vh;
+            background-color: rgb(79, 55, 165);
+            margin: auto;
+        }
+
+        .caja_menu_navegacion{
+            width: 20%;
+            height: 37vh;
+            float: left;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+        .title_menu_navegacion{
+            font-size: 1.2em;
+            font-family: Arial;
+            color: #fff;
+        }
+
+        .link_footer_inicio{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 5%;
+            float: left;
+        }
+        .link_footer_historia{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 5%;
+            float: left;
+        }
+        .link_footer_formatos{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 5%;
+            float: left;
+        }
+        .link_footer_ipc{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 5%;
+            float: left;
+        }
+        .link_footer_contacto{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 5%;
+            float: left;
+        }
+
+
+
+        .caja_contacto{
+            width: 20%;
+            height: 37vh;
+            float: left;
+            margin-top: 5%;
+            margin-left: 15%;
+        }
+        .title_contacto{
+            font-size: 1.2em;
+            font-family: Arial;
+            color: #fff;
+        }
+
+        .caja_gmail{
+            width: 100%;
+            height: 5vh;
+            margin-top: 5%;
+        }
+        .icono_gmail{
+            width: 11%;
+            float: left;
+        }
+        .texto_gmail{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+
+
+
+        .caja_number{
+            width: 100%;
+            height: 5vh;
+            margin-top: 5%;
+        }
+        .icono_numero{
+            width: 11%;
+            float: left;
+        }
+        .texto_number{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+
+
+        .caja_redes_sociales{
+            width: 20%;
+            height: 37vh;
+            float: left;
+            margin-top: 5%;
+            margin-left: 15%;
+        }
+        .redes_sociales{
+            font-size: 1.2em;
+            color: #fff;
+            font-family: Arial;
+        }
+
+        .caja_facebook{
+            width: 100%;
+            height: 5vh;
+            margin-top: 5%;
+        }
+        .icono_facebook{
+            width: 11%;
+            float: left;
+        }
+        .texto_facebook{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+        .caja_tiktok{
+            width: 100%;
+            height: 5vh;
+            margin-top: 3%;
+        }
+        .icono_tiktok{
+            width: 11%;
+            float: left;
+        }
+        .texto_tiktok{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+        .caja_instagram{
+            width: 100%;
+            height: 5vh;
+            margin-top: 3%;
+        }
+        .icono_instagram{
+            width: 11%;
+            float: left;
+        }
+        .texto_instagram{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+        .caja_youtube{
+            width: 100%;
+            height: 5vh;
+            margin-top: 3%;
+        }
+        .icono_youtube{
+            width: 11%;
+            float: left;
+        }
+        .texto_youtube{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+        .caja_twitter{
+            width: 100%;
+            height: 5vh;
+            margin-top: 3%;
+        }
+        .icono_twitter{
+            width: 11%;
+            float: left;
+        }
+        .texto_twitter{
+            font-size: 1em;
+            font-family:Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+
+
+        .line{
+            width: 50%;
+            height: 2px;
+            background-color: #fff;
+            float: left;
+            margin-top: 4%;
+            margin-left: 25%;
+        }
+        .derechos{
+            font-size: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            float: left;
+            margin-top: 1.5%;
+            margin-left: 34%;
+        }
+
+
+
+        @media(max-width: 768px) {
+            .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 47px;
+        left: 0;
+        background-color: #333;
+        height: 100vh;
+    }
+
+    .nav-list li{
+        text-align: center;
+        padding: 20px 10px;
+        margin-top: 0px;
+    }
+    
+    li:hover{
+        background-color: #8a8a8a;
+        color: #333;
+        padding: 20px 10px;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    .bar {
+        height: 3px;
+        width: 25px;
+        background-color: white;
+        margin: 3px 0;
+    }
+        }
+
+
+</style>
+</style>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="" alt="" class="logo">
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="mi-historia.html">MI HISTORIA</a></li>
+            <li><a href="formatos.html">FORMATOS</a></li>
+            <li><a href="ipc.html">IPC</a></li>
+            <li><a href="contacto.html">CONTACTAME</a></li>
+        </ul>
+    </nav>
+
+
+    <header>
+        <div class="caja_title_historia">
+            <h1 class="title_historia">Mi Historia</h1>
+        </div>
+
+
+        <div class="caja_texto_historia">
+            <p class="texto_historia">Todo comenzo en el año 2023. Cuando una tia mia iba a celebrar el baby shower de su primera hija,
+                buscaba quien podria hacerle una Video Invitación. Decidida llamo a mi madre para preguntarle si una de mis dos hermanas o yo
+                podriamos diseñarle dicha invitación. Mi madre nos hace la pregunta si podriamos diseñarle la Video Invitación a mi tia, yo 
+                me ofreci a diseñar la invitación. Mi tia me agradecio por mi ofrecimiento y hasta dijo que me pagaria.
+                <br><br>
+                Y asi fue mi primer trabajo como diseñando una Video Invitación, dias despues un conocido de mi tia también buscaba una persona quiern
+                podria hacerle una Video Invitación, mi tia le dice que yo su sorina podria diseñarle su Video Invitación, el acepta y así fue mi
+                wegundo trabajo diseñando un video Invitación.
+                <br><br>
+                Desde entonces se me ocurrio crear mi página en facebook ofreciendo mis servicios como diseñadora de Invitaciones Digitales.
+            </p>
+        </div>
+    </header>
+    
+
+
+
+
+    <footer>
+        <div class="caja_menu_navegacion">
+            <h3 class="title_menu_navegacion">Menú de Navegación</h3>
+            
+            <a href="index.html" class="link_footer_inicio">Inicio</a>
+            <br><br>
+            <a href="mi-historia.html" class="link_footer_historia">Mi Historia</a>
+            <br><br>
+            <a href="formatos.html" class="link_footer_formatos">Formatos</a>
+            <br><br>
+            <a href="ipc.html" class="link_footer_ipc">IPC</a>
+            <br><br>
+            <a href="login3.html" class="link_footer_contacto">Contacto</a>
+        </div>
+
+
+
+        <div class="caja_contacto">
+            <h3 class="title_contacto">Contacto</h3>
+
+            <div class="caja_gmail">
+                <img src="img/gmail-blanco.png" alt="" class="icono_gmail">
+                <h3 class="texto_gmail">veronicaperez@gmail.com</h3>
+            </div>
+
+            <div class="caja_number">
+                <img src="img/numero-blanco.png" alt="" class="icono_numero">
+                <a href="tel:+51933092030" onclick="PreventLoading()" class="texto_number">+51 933 092 030</a>
+            </div>
+        </div>
+
+
+
+        <div class="caja_redes_sociales">
+            <h3 class="redes_sociales">Redes Sociales</h3>
+       
+            <div class="caja_facebook">
+                <img src="img/facebook-blanco.png" alt="" class="icono_facebook">
+                <a href="https://www.facebook.com/profile.php?id=100093893385876" class="texto_facebook">Facebook</a>
+            </div>
+
+            <div class="caja_tiktok">
+                <img src="img/tiktok-blanco.png" alt="" class="icono_tiktok">
+                <a href="https://www.tiktok.com/" class="texto_tiktok">TikTok</a>
+            </div>
+
+            <div class="caja_instagram">
+                <img src="img/instagram-blanco.png" alt="" class="icono_instagram">
+                <a href="https://www.instagram.com/" class="texto_instagram">Instagram</a>
+            </div>
+
+            <div class="caja_youtube">
+                <img src="img/youtube-blanco.png" alt="" class="icono_youtube">
+                <a href="https://www.youtube.com/" class="texto_youtube">Youtube</a>
+            </div>
+
+            <div class="caja_twitter">
+                <img src="img/twtter-blanco.png" alt="" class="icono_twitter">
+                <a href="https://x.com/?lang=en" class="texto_twitter">Twitter</a>
+            </div>
+
+        </div>
+
+        <article class="line"></article>
+        <h3 class="derechos">
+            Todos los derechos reservados ©2024 - Madisson Dev
+        </h3>
+    </footer>
+
+
+
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
+
+mobileMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
+});
+    </script>
+
+
+
+</body>
+</html>

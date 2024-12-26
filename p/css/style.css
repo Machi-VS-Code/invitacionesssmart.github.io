@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(79, 55, 165);
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+
+    #inicio{
+        width: 100%;
+        height: 650px;
+    }
+    .fondo{
+        width: 100%;
+        margin: auto;
+        margin-top: -75px;
+    }
+    
+    
+    .name{
+        font-size: 30px;
+        position: absolute;
+        color: white;
+        margin-top: 250px;
+        margin-left: 60px;
+    }
+    .creacion{
+        font-size: 50px;
+        position: absolute;
+        color: white;
+        margin-top: 300px;
+        margin-left: 60px;
+    }
+    
+    
+    
+    #container_1{
+        width: 100%;
+        height: 80vh;
+    }
+    .titulo{
+        font-size: 2em;
+        float: left;
+        margin-left: 30%;
+    }
+    
+    .container_hombre{
+        width: 25%;
+        height: 56.3vh;
+        float: right;
+        margin-right: 15%;
+        margin-top: 7%;
+        box-shadow: 0 0 15px black;
+    }
+    .img_hombre{
+        width: 100%;
+        float: left;
+    }
+
+
+    .container_parrafo{
+        width: 35%;
+        height: 48vh;
+        margin-top: 8.5%;
+        margin-left: 10%;
+        float: left;
+    }
+    .parrafo{
+        width: 100%;
+        height: 360px;
+        float: left;
+        margin-left: 0%;
+        line-height: 1.5;
+    }
+    .texto-parrafo{
+        font-size: 1em;
+    }
+    
+    
+    
+    #servicios{
+        width: 100%;
+        height: 600px;
+        position: relative;
+    }
+    .texto-servicios{
+        font-size: 2em;
+        color: white;
+        float: left;
+        margin-top: 20px;
+        margin-left: 600px;
+    }
+    
+    .texto-ofrenda{
+        font-size: 1em;
+        color: #000;
+        line-height: 1.5;
+        margin-top: 11%;
+        margin-left: 90px;
+    }
+    .texto-informacion{
+        font-size: 1em;
+        color: #000;
+        line-height: 1.5;
+        margin-top: 2%;
+        margin-left: 90px;
+    }
+    .texto-sobra{
+        font-size: 1em;
+        color: #000;
+        line-height: 1.5;
+        margin-top: 2%;
+        margin-left: 90px;
+    }
+    
+    .muestra-invitaciones{
+        width: 50%;
+        height: 400px;
+        float: right;
+        margin-top: -26%;
+        margin-right: 50px;
+    }
+    .muestra-invitacion{
+        width: 31%;
+        float: left;
+        box-shadow: 0 0 20px #000;
+    }
+    .muestra-invitacion-2{
+        width: 31%;
+        float: left;
+        margin-left: 20px;
+        box-shadow: 0 0 20px #000;
+    }
+    .muestra-invitacion-3{
+        width: 32%;
+        float: left;
+        margin-left: 20px;
+        box-shadow: 0 0 20px #000;
+    }
+    
+    
+    
+    
+    
+    footer{
+        width: 100%;
+        height: 67vh;
+        background-color: rgb(79, 55, 165);
+        margin: auto;
+    }
+
+    .caja_menu_navegacion{
+        width: 20%;
+        height: 37vh;
+        float: left;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .title_menu_navegacion{
+        font-size: 1.2em;
+        font-family: Arial;
+        color: #fff;
+    }
+
+    .link_footer_inicio{
+        font-size: 1em;
+        font-family: Century Gothic;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 5%;
+        float: left;
+    }
+    .link_footer_historia{
+        font-size: 1em;
+        font-family: Century Gothic;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 5%;
+        float: left;
+    }
+    .link_footer_formatos{
+        font-size: 1em;
+        font-family: Century Gothic;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 5%;
+        float: left;
+    }
+    .link_footer_ipc{
+        font-size: 1em;
+        font-family: Century Gothic;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 5%;
+        float: left;
+    }
+    .link_footer_contacto{
+        font-size: 1em;
+        font-family: Century Gothic;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 5%;
+        float: left;
+    }
+
+
+
+    .caja_contacto{
+        width: 20%;
+        height: 37vh;
+        float: left;
+        margin-top: 5%;
+        margin-left: 15%;
+    }
+    .title_contacto{
+        font-size: 1.2em;
+        font-family: Arial;
+        color: #fff;
+    }
+
+    .caja_gmail{
+        width: 100%;
+        height: 5vh;
+        margin-top: 5%;
+    }
+    .icono_gmail{
+        width: 11%;
+        float: left;
+    }
+    .texto_gmail{
+        font-size: 1em;
+        font-family: Century Gothic;
+        color: #fff;
+        float: left;
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+
+
+
+    .caja_number{
+        width: 100%;
+        height: 5vh;
+        margin-top: 5%;
+    }
+    .icono_numero{
+        width: 11%;
+        float: left;
+    }
+    .texto_number{
+        font-size: 1em;
+        font-family: Century Gothic;
+        color: #fff;
+        float: left;
+        margin-top: 2%;
+        margin-left: 5%;
+        text-decoration: none;
+    }
+
+
+
+
+
+    .caja_redes_sociales{
+        width: 20%;
+        height: 37vh;
+        float: left;
+        margin-top: 5%;
+        margin-left: 15%;
+    }
+    .redes_sociales{
+        font-size: 1.2em;
+        color: #fff;
+        font-family: Arial;
+    }
+
+    .caja_facebook{
+        width: 100%;
+        height: 5vh;
+        margin-top: 5%;
+    }
+    .icono_facebook{
+        width: 11%;
+        float: left;
+    }
+    .texto_facebook{
+        font-size: 1em;
+        font-family: Century Gothic;
+        color: #fff;
+        float: left;
+        margin-top: 2%;
+        margin-left: 5%;
+        text-decoration: none;
+    }
+
+
+
+    .caja_tiktok{
+        width: 100%;
+        height: 5vh;
+        margin-top: 3%;
+    }
+    .icono_tiktok{
+        width: 11%;
+        float: left;
+    }
+    .texto_tiktok{
+        font-size: 1em;
+        font-family: Century Gothic;
+        color: #fff;
+        float: left;
+        margin-top: 2%;
+        margin-left: 5%;
+        text-decoration: none;
+    }
+
+
+
+    .caja_instagram{
+        width: 100%;
+        height: 5vh;
+        margin-top: 3%;
+    }
+    .icono_instagram{
+        width: 11%;
+        float: left;
+    }
+    .texto_instagram{
+        font-size: 1em;
+        font-family: Century Gothic;
+        color: #fff;
+        float: left;
+        margin-top: 2%;
+        margin-left: 5%;
+        text-decoration: none;
+    }
+
+
+
+    .caja_youtube{
+        width: 100%;
+        height: 5vh;
+        margin-top: 3%;
+    }
+    .icono_youtube{
+        width: 11%;
+        float: left;
+    }
+    .texto_youtube{
+        font-size: 1em;
+        font-family: Century Gothic;
+        color: #fff;
+        float: left;
+        margin-top: 2%;
+        margin-left: 5%;
+        text-decoration: none;
+    }
+
+
+
+    .caja_twitter{
+        width: 100%;
+        height: 5vh;
+        margin-top: 3%;
+    }
+    .icono_twitter{
+        width: 11%;
+        float: left;
+    }
+    .texto_twitter{
+        font-size: 1em;
+        font-family:Century Gothic;
+        color: #fff;
+        float: left;
+        margin-top: 2%;
+        margin-left: 5%;
+        text-decoration: none;
+    }
+
+
+
+
+
+    .line{
+        width: 50%;
+        height: 2px;
+        background-color: #fff;
+        float: left;
+        margin-top: 4%;
+        margin-left: 25%;
+    }
+    .derechos{
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        float: left;
+        margin-top: 1.5%;
+        margin-left: 34%;
+    }
+
+
+    @media (max-width:768px) {
+        .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 47px;
+    left: 0;
+    background-color: rgb(79, 55, 165);
+    height: 100vh;
+    text-decoration: none;
+}
+
+.nav-list li{
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 0px;
+}
+
+li:hover{
+    background-color: #8a8a8a;
+    color: #333;
+    padding: 20px 10px;
+}
+
+.nav-list.active {
+    display: flex;
+}
+
+.menu-toggle {
+    display: flex;
+}
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+}
+}

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitacion Para Cada Ocasion</title>
+</head>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(79, 55, 165);
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+
+    header{
+        width: 100%;
+        height: 230vh;
+    }
+
+    .caja_title_ipc{
+        width: 38%;
+        float: left;
+        margin-left: 31%;
+        margin-top: 10%;
+    }
+    .title_ipc{
+        font-size: 2em;
+        font-family: Century Gothic;
+        color: rgb(41, 0, 153);
+        text-align: center;
+    }
+
+
+
+    .container-1{
+        width: 100%;
+        float: left;
+        margin-top: 10%;
+    }
+
+    .caja_revelacion_genero{
+        width: 20%;
+        height: 40vh;
+        float: left;
+        margin-left: 10%;
+    }
+    .title_revelacion_genero{
+        font-size: 2em;
+        font-family: Century Gothic;
+        text-align: center;
+    }
+    .caja_img_revelacion_genero{
+        width: 100%;
+        height: 30vh;
+        margin-top: 5%;
+        box-shadow: 0 0 10px #000;
+    }
+    .img_revelacion_genero{
+        width: 100%;
+    }
+
+
+    .caja_cumpleaños{
+        width: 20%;
+        height: 40vh;
+        float: left;
+        margin-left: 10%;
+    }
+    .title_cumpleaños{
+        font-size: 2em;
+        font-family: Century Gothic;
+        text-align: center;
+    }
+    .caja_img_cumpleaños{
+        width: 100%;
+        height: 29.5vh;
+        margin-top: 5%;
+        box-shadow: 0 0 10px #000;
+    }
+    .img_cumpleaños{
+        width: 100%;
+    }
+
+
+
+    .caja_mascotas{
+        width: 20%;
+        height: 40vh;
+        float: left;
+        margin-left: 10%;
+    }
+    .title_mascotas{
+        font-size: 2em;
+        font-family: Century Gothic;
+        text-align: center;
+    }
+    .caja_img_mascotas{
+        width: 100%;
+        height: 29.7vh;
+        margin-top: 5%;
+        box-shadow: 0 0 10px #000;
+    }
+    .img_mascota{
+        width: 100%;
+    }
+
+
+
+    .caja_baby_shower{
+        width: 20%;
+        height: 40vh;
+        float: left;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    .title_baby_shower{
+        font-size: 2em;
+        font-family: Century Gothic;
+        text-align: center;
+    }
+    .caja_img_baby_shower{
+        width: 100%;
+        height: 30.0vh;
+        margin-top: 5%;
+        box-shadow: 0 0 10px #000;
+    }
+    .img_baby_shower{
+        width: 100%;
+    }
+
+
+
+    .caja_fechas_festivas{
+        width: 20%;
+        height: 40vh;
+        float: left;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    .title_fechas_festivas{
+        font-size: 2em;
+        font-family: Century Gothic;
+        text-align: center;
+    }
+    .caja_img_fechas_festivas{
+        width: 100%;
+        height: 30.0vh;
+        margin-top: 5%;
+        box-shadow: 0 0 10px #000;
+    }
+    .img_navidad{
+        width: 100%;
+    }
+
+
+
+    .caja_quince_años{
+        width: 20%;
+        height: 40vh;
+        float: left;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    .title_quince_años{
+        font-size: 2em;
+        font-family: Century Gothic;
+        text-align: center;
+    }
+    .caja_img_quince_años{
+        width: 100%;
+        height: 33.8vh;
+        margin-top: 5%;
+        box-shadow: 0 0 10px #000;
+    }
+    .img_quince_años{
+        width: 100%;
+    }
+
+
+
+    
+    .caja_boda{
+        width: 20%;
+        height: 40vh;
+        float: left;
+        margin-top: 10%;
+        margin-left: 40%;
+    }
+    .title_boda{
+        font-size: 2em;
+        font-family: Century Gothic;
+        text-align: center;
+    }
+    .caja_img_boda{
+        width: 100%;
+        height: 45vh;
+        margin-top: 5%;
+        box-shadow: 0 0 10px #000;
+    }
+    .img_boda{
+        width: 100%;
+    }
+
+
+
+
+
+    footer{
+            width: 100%;
+            height: 67vh;
+            background-color: rgb(79, 55, 165);
+        }
+
+        .caja_menu_navegacion{
+            width: 20%;
+            height: 37vh;
+            float: left;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+        .title_menu_navegacion{
+            font-size: 1.2em;
+            font-family: Arial;
+            color: #fff;
+        }
+
+        .link_footer_inicio{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 5%;
+            float: left;
+        }
+        .link_footer_historia{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 5%;
+            float: left;
+        }
+        .link_footer_formatos{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 5%;
+            float: left;
+        }
+        .link_footer_ipc{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 5%;
+            float: left;
+        }
+        .link_footer_contacto{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 5%;
+            float: left;
+        }
+
+
+
+        .caja_contacto{
+            width: 20%;
+            height: 37vh;
+            float: left;
+            margin-top: 5%;
+            margin-left: 15%;
+        }
+        .title_contacto{
+            font-size: 1.2em;
+            font-family: Arial;
+            color: #fff;
+        }
+
+        .caja_gmail{
+            width: 100%;
+            height: 5vh;
+            margin-top: 5%;
+        }
+        .icono_gmail{
+            width: 11%;
+            float: left;
+        }
+        .texto_gmail{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+
+
+
+        .caja_number{
+            width: 100%;
+            height: 5vh;
+            margin-top: 5%;
+        }
+        .icono_numero{
+            width: 11%;
+            float: left;
+        }
+        .texto_number{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+
+
+        .caja_redes_sociales{
+            width: 20%;
+            height: 37vh;
+            float: left;
+            margin-top: 5%;
+            margin-left: 15%;
+        }
+        .redes_sociales{
+            font-size: 1.2em;
+            color: #fff;
+            font-family: Arial;
+        }
+
+        .caja_facebook{
+            width: 100%;
+            height: 5vh;
+            margin-top: 5%;
+        }
+        .icono_facebook{
+            width: 11%;
+            float: left;
+        }
+        .texto_facebook{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+        .caja_tiktok{
+            width: 100%;
+            height: 5vh;
+            margin-top: 3%;
+        }
+        .icono_tiktok{
+            width: 11%;
+            float: left;
+        }
+        .texto_tiktok{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+        .caja_instagram{
+            width: 100%;
+            height: 5vh;
+            margin-top: 3%;
+        }
+        .icono_instagram{
+            width: 11%;
+            float: left;
+        }
+        .texto_instagram{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+        .caja_youtube{
+            width: 100%;
+            height: 5vh;
+            margin-top: 3%;
+        }
+        .icono_youtube{
+            width: 11%;
+            float: left;
+        }
+        .texto_youtube{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+        .caja_twitter{
+            width: 100%;
+            height: 5vh;
+            margin-top: 3%;
+        }
+        .icono_twitter{
+            width: 11%;
+            float: left;
+        }
+        .texto_twitter{
+            font-size: 1em;
+            font-family:Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+
+
+        .line{
+            width: 50%;
+            height: 2px;
+            background-color: #fff;
+            float: left;
+            margin-top: 4%;
+            margin-left: 25%;
+        }
+        .derechos{
+            font-size: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            float: left;
+            margin-top: 1.5%;
+            margin-left: 34%;
+        }
+
+
+
+        @media (max-width:768px) {
+            .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 47px;
+        left: 0;
+        background-color: rgb(79, 55, 165);
+        height: 100vh;
+    }
+
+    .nav-list li{
+        text-align: center;
+        padding: 20px 10px;
+        margin-top: 0px;
+    }
+    
+    li:hover{
+        background-color: #8a8a8a;
+        color: #333;
+        padding: 20px 10px;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    .bar {
+        height: 3px;
+        width: 25px;
+        background-color: white;
+        margin: 3px 0;
+    }
+    }
+        
+
+
+</style>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="" alt="" class="logo">
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="mi-historia.html">MI HISTORIA</a></li>
+            <li><a href="formatos.html">FORMATOS</a></li>
+            <li><a href="ipc.html">IPC</a></li>
+            <li><a href="contacto.html">CONTACTAME</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="caja_title_ipc">
+            <h1 class="title_ipc">Invitaciones para cada Ocasion</h1>
+        </div>
+
+<div class="container-1">
+    
+        <div class="caja_revelacion_genero">
+            <h1 class="title_revelacion_genero">Revelacion de Género</h1>
+            <div class="caja_img_revelacion_genero">
+                <img src="img/img-revelacion-genero.jpg" alt="" class="img_revelacion_genero">
+            </div>
+        </div>
+
+
+
+        <div class="caja_cumpleaños">
+            <h1 class="title_cumpleaños">Cupleaños</h1>
+            <div class="caja_img_cumpleaños">
+                <img src="img/img-cumpleaños.jpg" alt="" class="img_cumpleaños">
+            </div>
+        </div>
+
+
+
+        <div class="caja_mascotas">
+            <h1 class="title_mascotas">Mascotas</h1>
+            <div class="caja_img_mascotas">
+                <img src="img/img-mascota_1.jpg" alt="" class="img_mascota">
+            </div>
+        </div>
+</div>
+
+
+
+<div class="container-2">
+        <div class="caja_baby_shower">
+            <h1 class="title_baby_shower">Baby Shower</h1>
+            <div class="caja_img_baby_shower">
+                <img src="img/img-baby-shower.jpg" alt="" class="img_baby_shower">
+            </div>
+        </div>
+
+
+        
+        <div class="caja_fechas_festivas">
+            <h1 class="title_fechas_festivas">Fechas Festivas</h1>
+            <div class="caja_img_fechas_festivas">
+                <img src="img/img-navidad.jpg" alt="" class="img_navidad">
+            </div>
+        </div>
+
+
+
+        <div class="caja_quince_años">
+            <h1 class="title_quince_años">15 Años</h1>
+            <div class="caja_img_quince_años">
+                <img src="img/img-quince-años.png" alt="" class="img_quince_años">
+            </div>
+        </div>
+
+
+
+        <div class="caja_boda">
+            <h1 class="title_boda">Boda</h1>
+            <div class="caja_img_boda">
+                <img src="img/img-boda.jpg" alt="" class="img_boda">
+            </div>
+        </div>
+</div>
+    </header>
+
+    <footer>
+        <div class="caja_menu_navegacion">
+            <h3 class="title_menu_navegacion">Menú de Navegación</h3>
+            
+            <a href="index.html" class="link_footer_inicio">Inicio</a>
+            <br><br>
+            <a href="mi-historia.html" class="link_footer_historia">Mi Historia</a>
+            <br><br>
+            <a href="formatos.html" class="link_footer_formatos">Formatos</a>
+            <br><br>
+            <a href="ipc.html" class="link_footer_ipc">IPC</a>
+            <br><br>
+            <a href="contacto.html" class="link_footer_contacto">Contacto</a>
+        </div>
+
+
+
+        <div class="caja_contacto">
+            <h3 class="title_contacto">Contacto</h3>
+
+            <div class="caja_gmail">
+                <img src="img/gmail-blanco.png" alt="" class="icono_gmail">
+                <h3 class="texto_gmail">veronicaperez@gmail.com</h3>
+            </div>
+
+            <div class="caja_number">
+                <img src="img/numero-blanco.png" alt="" class="icono_numero">
+                <a href="tel:+51933092030" onclick="PreventLoading()" class="texto_number">+51 933 092 030</a>
+            </div>
+        </div>
+
+
+
+        <div class="caja_redes_sociales">
+            <h3 class="redes_sociales">Redes Sociales</h3>
+
+            <div class="caja_facebook">
+                <img src="img/facebook-blanco.png" alt="" class="icono_facebook">
+                <a href="https://www.facebook.com/profile.php?id=100093893385876" class="texto_facebook">Facebook</a>
+            </div>
+
+            <div class="caja_tiktok">
+                <img src="img/tiktok-blanco.png" alt="" class="icono_tiktok">
+                <a href="https://www.tiktok.com/" class="texto_tiktok">TikTok</a>
+            </div>
+
+            <div class="caja_instagram">
+                <img src="img/instagram-blanco.png" alt="" class="icono_instagram">
+                <a href="https://www.instagram.com/" class="texto_instagram">Instagram</a>
+            </div>
+
+            <div class="caja_youtube">
+                <img src="img/youtube-blanco.png" alt="" class="icono_youtube">
+                <a href="https://www.youtube.com/" class="texto_youtube">Youtube</a>
+            </div>
+
+            <div class="caja_twitter">
+                <img src="img/twtter-blanco.png" alt="" class="icono_twitter">
+                <a href="https://x.com/?lang=en" class="texto_twitter">Twitter</a>
+            </div>
+
+        </div>
+
+        <article class="line"></article>
+        <h3 class="derechos">
+            Todos los derechos reservados ©2024 - Madisson Dev
+        </h3>
+    </footer>
+
+
+
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
+
+mobileMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
+});
+    </script>
+    
+</body>
+</html>

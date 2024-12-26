@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<style>
+    body {
+        font-family: Century Gothic;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    form{
+        padding: 50px 55px;
+        box-shadow: 0 0 20px #000;
+        /*sin border webon*/
+        text-align: center;
+        width: 340px;
+    }
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    h2{
+        color: rgb(41, 0, 153);
+        font-size: 35px;
+    }
+
+    label{
+        color: rgb(41, 0, 153);
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    input, textarea{
+
+        padding: 17px 25px;
+        /*sin borde webon*/
+        margin-bottom: 20px;
+        background-color: rgb(216, 205, 255);
+        border: 0px;
+        color: black;
+        outline: none;
+
+    }
+
+    input::placeholder, textarea::placeholder{
+        color: black;
+    }
+
+    .form-txt{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .form-txt a {
+        color: rgb(41, 0, 153);
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .btn{
+        font-size: 16px;
+        color: #fff;
+        border: 0;
+        /*sin borde webon*/
+        background-color: rgb(79, 55, 165);
+        box-shadow: 0 0 20px rgb(41, 0, 153);
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        background-color: rgb(79, 55, 165);
+    }
+
+    @media (max-width:768px){
+        body{
+            padding: 30px;
+        }
+
+        form {
+            padding: 50px 30px;
+            width: 100%;
+        }
+
+        input{
+            padding: 15px;
+        }
+    }
+</style>
+<body>
+
+    <form action="https://formsubmit.co/machichoon@gmail.com" method="POST">
+        <h1>Contacto</h1>
+        <div class="input-group">
+            <label for="nae">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre" required>
+
+            <label for="phone">Telefono</label>
+            <input type="tel" name="phone" id="phone" placeholder="Telefono" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+
+            <label for="phone">Telefono</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje" required></textarea>
+
+            <div class="form-txt">
+                <a href="index.html">Volver</a>
+            </div>
+
+            <input class="btn" type="submit" velue="Enviar">
+
+
+        </div>
+    </form>
+    
+</body>
+</html>

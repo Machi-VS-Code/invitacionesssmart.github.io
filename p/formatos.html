@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatos</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(79, 55, 165);
+    padding: 10px 20px;
+    width: 100%;
+    margin: auto;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+
+
+
+
+
+        header{
+            width: 100%;
+            height: 255vh;
+        }
+
+        .container_pdf{
+            width: 100%;
+            height: 80vh;
+            float: left;
+            margin-top: 2%;
+        }
+        .caja_titulo_pdf{
+            width: 30%;
+            float: left;
+            margin-left: 35%;
+            text-align: center;
+        }
+        .titulo_pdf{
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+            padding: 10px;
+        }
+
+        .caja_img_pdf{
+            width: 30%;
+            height: 40vh;
+            margin-top: 5%;
+            margin-left: 10%;
+            float: left;
+            box-shadow: 0 0 10px #000;
+        }
+        .img_pdf{
+            width: 100%;
+            height: 100%;
+        }
+
+        .caja_texto_pdf{
+            width: 35%;
+            height: 50vh;
+            float: right;
+            margin-top: 2%;
+            margin-right: 10%;
+        }
+        .texto_formato_pdf{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #000;
+            margin-top: 16%;
+            line-height: 1.5;
+        }
+
+
+
+
+
+        .container_invitacion_video{
+            width: 100%;
+            height: 80vh;
+            float: left;
+            margin-top: 2%;
+        }
+        .caja_titulo_invitacion_video{
+            width: 34%;
+            float: left;
+            margin-left: 33%;
+            text-align: center;
+        }
+        .titulo_invitacion_video{
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+            padding: 10px;
+        }
+
+        .caja_img_invitacion_video{
+            width: 30%;
+            height: 38.2vh;
+            margin-top: 5%;
+            margin-left: 10%;
+            float: left;
+            box-shadow: 0 0 10px #000;
+
+        }
+        .img_video_invitacion{
+            width: 100%;
+        }
+
+        .caja_texto_invitacion_video{
+            width: 35%;
+            height: 50vh;
+            float: right;
+            margin-top: 2%;
+            margin-right: 10%;
+        }
+        .invitacion_video_texto{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #000;
+            margin-top: 14%;
+            line-height: 1.5;
+        }
+
+
+
+
+
+        .container_jpg{
+            width: 100%;
+            height: 80vh;
+            float: left;
+            margin-top: 2%;
+        }
+        .caja_titulo_jpg{
+            width: 30%;
+            float: left;
+            margin-left: 35%;
+            text-align: center;
+        }
+        .titulo_jpg{
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+            padding: 10px;
+        }
+
+        .caja_img_jpg{
+            width: 30%;
+            height: 38.1vh;
+            margin-top: 5%;
+            margin-left: 10%;
+            float: left;
+            box-shadow: 0 0 10px #000;
+        }
+        .img_jpg{
+            width: 100%;
+        }
+
+        .caja_texto_jpg{
+            width: 35%;
+            height: 50vh;
+            float: right;
+            margin-top: 5%;
+            margin-right: 10%;
+        }
+        .texto_jpg{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #000;
+            margin-top: 16%;
+            line-height: 1.5;
+        }
+
+
+
+
+        footer{
+            width: 100%;
+            height: 67vh;
+            background-color: rgb(79, 55, 165);
+        }
+
+        .caja_menu_navegacion{
+            width: 20%;
+            height: 37vh;
+            float: left;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+        .title_menu_navegacion{
+            font-size: 1.2em;
+            font-family: Arial;
+            color: #fff;
+        }
+
+        .link_footer_inicio{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 5%;
+            float: left;
+        }
+        .link_footer_historia{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 5%;
+            float: left;
+        }
+        .link_footer_formatos{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 5%;
+            float: left;
+        }
+        .link_footer_ipc{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 5%;
+            float: left;
+        }
+        .link_footer_contacto{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 5%;
+            float: left;
+        }
+
+        
+
+        .caja_contacto{
+            width: 20%;
+            height: 37vh;
+            float: left;
+            margin-top: 5%;
+            margin-left: 15%;
+        }
+        .title_contacto{
+            font-size: 1.2em;
+            font-family: Arial;
+            color: #fff;
+        }
+
+        .caja_gmail{
+            width: 100%;
+            height: 5vh;
+            margin-top: 5%;
+        }
+        .icono_gmail{
+            width: 11%;
+            float: left;
+        }
+        .texto_gmail{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+
+
+
+        .caja_number{
+            width: 100%;
+            height: 5vh;
+            margin-top: 5%;
+        }
+        .icono_numero{
+            width: 11%;
+            float: left;
+        }
+        .texto_number{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+
+
+        .caja_redes_sociales{
+            width: 20%;
+            height: 37vh;
+            float: left;
+            margin-top: 5%;
+            margin-left: 15%;
+        }
+        .redes_sociales{
+            font-size: 1.2em;
+            color: #fff;
+            font-family: Arial;
+        }
+
+        .caja_facebook{
+            width: 100%;
+            height: 5vh;
+            margin-top: 5%;
+        }
+        .icono_facebook{
+            width: 11%;
+            float: left;
+        }
+        .texto_facebook{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+        .caja_tiktok{
+            width: 100%;
+            height: 5vh;
+            margin-top: 3%;
+        }
+        .icono_tiktok{
+            width: 11%;
+            float: left;
+        }
+        .texto_tiktok{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+        .caja_instagram{
+            width: 100%;
+            height: 5vh;
+            margin-top: 3%;
+        }
+        .icono_instagram{
+            width: 11%;
+            float: left;
+        }
+        .texto_instagram{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+        .caja_youtube{
+            width: 100%;
+            height: 5vh;
+            margin-top: 3%;
+        }
+        .icono_youtube{
+            width: 11%;
+            float: left;
+        }
+        .texto_youtube{
+            font-size: 1em;
+            font-family: Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+        .caja_twitter{
+            width: 100%;
+            height: 5vh;
+            margin-top: 3%;
+        }
+        .icono_twitter{
+            width: 11%;
+            float: left;
+        }
+        .texto_twitter{
+            font-size: 1em;
+            font-family:Century Gothic;
+            color: #fff;
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+
+
+
+
+
+        .line{
+            width: 50%;
+            height: 2px;
+            background-color: #fff;
+            float: left;
+            margin-top: 4%;
+            margin-left: 25%;
+        }
+        .derechos{
+            font-size: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            float: left;
+            margin-top: 1.5%;
+            margin-left: 34%;
+        }
+
+        @media (max-width: 768px) {
+            .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 47px;
+        left: 0;
+        background-color: #333;
+        height: 100vh;
+    }
+
+    .nav-list li{
+        text-align: center;
+        padding: 20px 10px;
+        margin-top: 0px;
+    }
+    
+    li:hover{
+        background-color: #8a8a8a;
+        color: #333;
+        padding: 20px 10px;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    .bar {
+        height: 3px;
+        width: 25px;
+        background-color: white;
+        margin: 3px 0;
+    }
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caja_logo {
+    width: 5%;
+    background-color: blue;
+    float: left;
+}
+.img_logo{
+    width: 100%;
+}
+
+.menu-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menu {
+    display: none; /* Ocultar el menú por defecto */
+    position: absolute;
+    top: 60px; /* Ajusta según sea necesario */
+    left: 0;
+    background-color: #007BFF;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="" alt="" class="logo">
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="mi-historia.html">MI HISTORIA</a></li>
+            <li><a href="formatos.html">FORMATOS</a></li>
+            <li><a href="ipc.html">IPC</a></li>
+            <li><a href="contacto.html">CONTACTAME</a></li>
+        </ul>
+    </nav>
+
+
+
+    <header>
+        <div class="container_pdf">
+            <div class="caja_titulo_pdf">
+                <h1 class="titulo_pdf">En Formato pdf</h1>
+            </div>
+
+            <div class="caja_img_pdf">
+                <img src="img/img-pdf.jpg" alt="" class="img_pdf">
+            </div>
+     
+            <div class="caja_texto_pdf">
+                <p class="texto_formato_pdf">
+                    Las invitaciones digitales PDF permiten un alto grado de personalización. Los anfitriones pueden agregar nombres específicos de los invitados, fotos, videos y enlaces interactivos que dirigen a los destinatarios a páginas web, mapas de ubicación del evento, formularios de confirmación de asistencia y más.
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="container_invitacion_video">
+            <div class="caja_titulo_invitacion_video">
+                <h1 class="titulo_invitacion_video">En Formato Video Invitacion</h1>
+            </div>
+
+            <div class="caja_img_invitacion_video">
+                <img src="img/img-video-invitacion.jpg" alt="" class="img_video_invitacion">
+            </div>
+
+            <div class="caja_texto_invitacion_video">
+                <p class="invitacion_video_texto">
+                    Una video invitación es una forma creativa y moderna de invitar a personas a un evento, como cumpleaños, bodas, fiestas, reuniones, o cualquier otra ocasión especial. En lugar de usar invitaciones impresas, se crea un video que incluye los detalles del evento (fecha, lugar, hora) acompañado de elementos visuales y sonoros, como: animaciones o efectos visuales, texto animado y musica de fondo.
+                </p> 
+            </div>
+        </div>
+
+
+
+        <div class="container_jpg">
+            <div class="caja_titulo_jpg">
+                <h1 class="titulo_jpg">En Formato JPG</h1>
+            </div>
+
+            <div class="caja_img_jpg">
+                <img src="img/img-jpg.jpg" alt="" class="img_jpg">
+            </div>
+
+            <div class="caja_texto_pdf">
+                <p class="texto_jpg">
+                    Una invitación JPG es una invitación digital en formato de imagen (jpg). Es una opción sencilla y versátil para compartir invitaciones en redes sociales, WhatsApp, correo electrónico o cualquier plataforma que permita el envío de imágenes.
+                </p>
+            </div>
+        </div>
+    </header>
+
+
+
+    <footer>
+        <div class="caja_menu_navegacion">
+            <h3 class="title_menu_navegacion">Menú de Navegación</h3>
+            
+            <a href="index.html" class="link_footer_inicio">Inicio</a>
+            <br><br>
+            <a href="acerca-de-mi.html" class="link_footer_historia">Acerca de mi</a>
+            <br><br>
+            <a href="formatos.html" class="link_footer_formatos">Formatos</a>
+            <br><br>
+            <a href="ipc.html" class="link_footer_ipc">IPC</a>
+            <br><br>
+            <a href="login3.html" class="link_footer_contacto">Contacto</a>
+        </div>
+
+
+
+        <div class="caja_contacto">
+            <h3 class="title_contacto">Contacto</h3>
+
+            <div class="caja_gmail">
+                <img src="img/gmail-blanco.png" alt="" class="icono_gmail">
+                <h3 class="texto_gmail">veronicaperez@gmail.com</h3>
+            </div>
+
+            <div class="caja_number">
+                <img src="img/numero-blanco.png" alt="" class="icono_numero">
+                <a href="tel:+51933092030" onclick="PreventLoading()" class="texto_number">+51 933 092 030</a>
+            </div>
+        </div>
+
+
+
+        <div class="caja_redes_sociales">
+            <h3 class="redes_sociales">Redes Sociales</h3>
+       
+            <div class="caja_facebook">
+                <img src="img/facebook-blanco.png" alt="" class="icono_facebook">
+                <a href="https://www.facebook.com/profile.php?id=100093893385876" class="texto_facebook">Facebook</a>
+            </div>
+
+            <div class="caja_tiktok">
+                <img src="img/tiktok-blanco.png" alt="" class="icono_tiktok">
+                <a href="https://www.tiktok.com/" class="texto_tiktok">TikTok</a>
+            </div>
+
+            <div class="caja_instagram">
+                <img src="img/instagram-blanco.png" alt="" class="icono_instagram">
+                <a href="https://www.instagram.com/" class="texto_instagram">Instagram</a>
+            </div>
+
+            <div class="caja_youtube">
+                <img src="img/youtube-blanco.png" alt="" class="icono_youtube">
+                <a href="https://www.youtube.com/" class="texto_youtube">Youtube</a>
+            </div>
+
+            <div class="caja_twitter">
+                <img src="img/twtter-blanco.png" alt="" class="icono_twitter">
+                <a href="https://x.com/?lang=en" class="texto_twitter">Twitter</a>
+            </div>
+
+        </div>
+
+        <article class="line"></article>
+        <h3 class="derechos">
+            Todos los derechos reservados ©2024 - Madisson Dev
+        </h3>
+    </footer>
+    
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
+
+mobileMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            background-color: #000; /* Fondo negro */
+            position: relative;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .dot {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: float 3s ease-in-out infinite;
+            box-shadow: 0 0 20px white; /* Efecto de brillo */
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .login-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-container input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 16px;
+        }
+
+        .login-container button {
+            width: 94%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff007f; /* Color de botón */
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-container button:hover {
+            background-color: #ff4f7f; /* Color de botón al pasar el mouse */
+        }
+
+        .login-container a {
+            display: block;
+            margin-top: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline; /* Subrayar al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const numDots = 100; // Número de puntos
+
+        for (let i = 0; i < numDots; i++) {
+            const dot = document.createElement('div');
+            dot.className = 'dot';
+            const size = Math.random() * 10 + 5; // Tamaño aleatorio entre 5 y 15px
+            dot.style.width = `${size}px`;
+            dot.style.height = `${size}px`;
+            dot.style.backgroundColor = 'white'; // Color blanco
+            dot.style.left = `${Math.random() * 100}vw`; // Posición horizontal aleatoria
+            dot.style.top = `${Math.random() * 100}vh`; // Posición vertical aleatoria
+            dot.style.animationDuration = `${Math.random() * 2 + 2}s`; // Duración de la animación aleatoria
+            document.body.appendChild(dot);
+        }
+    </script>
+
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <input type="gmail" placeholder="Email" required>
+        <input type="password" placeholder="Contraseña" required>
+        <button type="submit">Entrar</button>
+        <a href="#">¿Olvidaste tu contraseña?</a>
+        <a href="registro.html">No tienes una cuenta? Regístrate aquí</a>
+    </div>
+</body>
+</html>
